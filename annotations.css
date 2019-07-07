@@ -1,0 +1,18 @@
+label {
+	text-decoration: dashed underline;
+}
+label input {
+	display: none;
+}
+input:not(:checked) ~ span {
+	display: none;
+}
+input ~ span {
+	color: grey;
+}
+input ~ span:before {
+	content: ' [';
+}
+input ~ span:after {
+	content: ']';
+}
